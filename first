@@ -1,0 +1,12 @@
+# I started with the random.uniform() function which allowed for a three digit number to be generated, no including decimals, within a set range of numbers. Then using the math.floor() function to round down the randomly generated number removing all decimal places and making the numbers three digit integers. Assining the larger range to minuend and the smaller range to subtrahend.
+
+import random
+import math
+
+# A sequence of assignments to generate a random problem:
+minuend = math.floor(random.uniform(500, 999))
+subtrahend = math.floor(random.uniform(random.uniform(100, 499))
+answer = minuend - subtrahend
+
+print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend))
+print('Answer: {answer}'.format(answer = answer))
