@@ -4,8 +4,10 @@ import random
 import math
 
 # A sequence of assignments to generate a random problem:
-minuend = math.floor(random.uniform(500, 999))
-subtrahend = math.floor(random.uniform(100, 499))
+minuend = random.randrang(500, 999, 10)
+subtrahend = random.randint(100, 499)
+if minuend % 10 == subtrahend % 10:
+  minuend += 1
 answer = minuend - subtrahend
 
 print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend))
