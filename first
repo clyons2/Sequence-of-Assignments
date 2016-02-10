@@ -4,7 +4,7 @@ import random
 import math
 
 # A sequence of assignments to generate a random problem:
-minuend = random.randrang(500, 999, 10)
+minuend = random.randrange(500, 999, 10)
 subtrahend = random.randint(100, 499)
 if minuend % 10 == subtrahend % 10:
   minuend += 1
