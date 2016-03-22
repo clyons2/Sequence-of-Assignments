@@ -1,5 +1,5 @@
-# I started with the random.randrange function for minued, which generated a random three-digit integer within the given range that is a multiple of 10.
-# For subtrahend the random.randint functions which allowed for a three-digit integer to be generated, within a set range of numbers. 
+# I started with the random.randrange function for minuend, which generated a random three-digit integer within the given range that is a multiple of 10.
+# For subtrahend the random.randint functions which allowed for a three-digit integer to be generated within a set range of numbers. 
 # The conditional ensures that borrowing is necessary.
 
 import random
