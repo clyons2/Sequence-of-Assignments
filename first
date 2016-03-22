@@ -1,4 +1,6 @@
-# I started with the random.uniform function which allowed for a three digit number to be generated, not including decimals, within a set range of numbers. Then using the math.floor function, the randomly generated numbers were rounded down making the numbers three digit integers. Lastly the larger range was assigned to minuend and the smaller range to subtrahend.
+# I started with the random.randrange function for minued, which generated a random three-digit integer within the given range that is a multiple of 10.
+# For subtrahend the random.randint functions which allowed for a three-digit integer to be generated, within a set range of numbers. 
+# The conditional ensures that borrowing is necessary.
 
 import random
 import math
@@ -7,8 +9,10 @@ import math
 minuend = random.randrange(500, 999, 10)
 subtrahend = random.randint(100, 499)
 if minuend % 10 == subtrahend % 10:
-  minuend += 1
+  subtrahend += 1
 answer = minuend - subtrahend
 
 print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend))
 print('Answer: {answer}'.format(answer = answer))
+  
+
