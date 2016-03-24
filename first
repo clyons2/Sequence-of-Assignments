@@ -6,13 +6,13 @@ import random
 import math
 
 # A sequence of assignments to generate a random problem:
-minuend = random.randrange(500, 999, 10)
-subtrahend = random.randint(100, 499)
-if minuend % 10 == subtrahend % 10:
-  subtrahend += 1
-answer = minuend - subtrahend
+minuend = random.randrange(500, 999, 10)  # Generates a random integer within the range and is a multiple of 10
+subtrahend = random.randint(100, 499) # Generates a random integer within the range
+if minuend % 10 == subtrahend % 10: # Checks the "one's" position of both numbers to ensure borrowing in necessary
+  subtrahend += 1 
+answer = minuend - subtrahend # Calculates the difference
 
-print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend))
-print('Answer: {answer}'.format(answer = answer))
+print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend)) # Prints the subtraction question
+print('Answer: {answer}'.format(answer = answer)) # Prints the answer to the subtraction
   
 
