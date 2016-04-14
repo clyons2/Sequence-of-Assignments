@@ -1,18 +1,17 @@
-# I started with the random.randrange function for minuend, which generated a random three-digit integer within the given range that is a multiple of 10.
-# For subtrahend the random.randint functions which allowed for a three-digit integer to be generated within a set range of numbers. 
-# The conditional ensures that borrowing is necessary.
+# The random.randrange function is used for minuend to which generated a random three-digit integer within the given range that is a multiple of 10.
+# For subtrahend the random.randint function is used. This allows for a three-digit integer to be generated within a set range of numbers that is a multiple of 9. 
+
 
 import random
-import math
 
 # A sequence of assignments to generate a random problem:
 minuend = random.randrange(500, 999, 10)  # Generates a random integer within the range and is a multiple of 10
-subtrahend = random.randint(100, 499) # Generates a random integer within the range
-if minuend % 10 == subtrahend % 10: # Checks the "one's" position of both numbers to ensure borrowing in necessary
-  subtrahend += 1 
+subtrahend = random.randrange(199, 279, 9) # Generates a random integer within the range and is a multiple of 9
+
 answer = minuend - subtrahend # Calculates the difference
 
 print('Problem: {minuend} - {subtrahend} = ?'.format(minuend = minuend, subtrahend = subtrahend)) # Prints the subtraction question
 print('Answer: {answer}'.format(answer = answer)) # Prints the answer to the subtraction
+
   
 
